@@ -25,3 +25,4 @@ Route::get('/', function () {
 });
 
 Route::get('/print', 'PrintManagementController@print_client');
+Route::get('/print_tanggal', 'PrintManagementController@print_client_tanggal');
