@@ -151,16 +151,16 @@ class PrintManagementController extends Controller
 
     public function print_client_tanggal(Request $request)
     {
-        // $response = Http::post('https://infotechbdg.com/api/local/print_tanggal', [
-        //     'tanggal_awal' => $request->tanggal_awal,
-        //     'tanggal_akhir' => $request->tanggal_akhir,
-        //     'secretkey' => $request->key
-        // ]);
-        $response = Http::post('http://localhost:8000/api/local/print_tanggal', [
+        $response = Http::post('https://infotechbdg.com/api/local/print_tanggal', [
             'tanggal_awal' => $request->tanggal_awal,
             'tanggal_akhir' => $request->tanggal_akhir,
             'secretkey' => $request->key
         ]);
+        // $response = Http::post('http://localhost:8000/api/local/print_tanggal', [
+        //     'tanggal_awal' => $request->tanggal_awal,
+        //     'tanggal_akhir' => $request->tanggal_akhir,
+        //     'secretkey' => $request->key
+        // ]);
 
         // return $response;
 
